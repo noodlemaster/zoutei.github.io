@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koji Shukawa</title>
+    <link href="tools/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="tools/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Roboto:700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                var speed = 750;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({ scrollTop: position }, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Koji Shukawa</div>
+                <div class="intro-sub">Software Developer</div>
+                <p class="intro-description">Hello! I'm Koji, a first year Physical Natural Sciences student from Japan
+                    at St John's College, University of Cambridge.</p>
+                <a class="btn btn-primary w-auto button" href="#portfolio">View my projects</a>
+            </div>
+        </div>
+    </header>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <ul class="social-buttons">
+                        <li class="list-inline-item social-button">
+                            <a href="https://www.github.com/zoutei/">
+                                <i class="fab fa-github social-button-icon"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-button">
+                            <a href="mailto:ks925@cam.ac.uk">
+                                <i class="fas fa-envelope social-button-icon"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-button">
+                            <a href="https://www.linkedin.com/in/koji-shukawa/">
+                                <i class="fab fa-linkedin-in social-button-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <span class="copyright">Copyright &copy; Koji Shukawa 2020</span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
