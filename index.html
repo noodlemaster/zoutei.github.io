@@ -11,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:600|Roboto:700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="tools/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function () {
-            $('a[href^="#"]').click(function () {
+            $('a[href^="#portfolio"]').click(function () {
                 var speed = 750;
                 var href = $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
@@ -47,7 +48,7 @@
         </div>
         <div class="row portfolio-list">
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioAndroidApp">
+                <a class="portfolio-link" data-toggle="modal" data-target="#portfolioAndroidApp">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fas fa-plus fa-3x"></i>
@@ -57,11 +58,11 @@
                 </a>
                 <div class="portfolio-caption">
                     <h4>Android Application</h4>
-                    <p class="text-muted">Java</p>
+                    <p class="text-muted">Java Android Studio</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioServer">
+                <a class="portfolio-link" data-toggle="modal" data-target="#portfolioServer">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fas fa-plus fa-3x"></i>
@@ -71,11 +72,11 @@
                 </a>
                 <div class="portfolio-caption">
                     <h4>Back-End Server Application</h4>
-                    <p class="text-muted">Python(Django) Paypal api</p>
+                    <p class="text-muted">Python(Django) PayPal API</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioNCC">
+                <a class="portfolio-link" data-toggle="modal" data-target="#portfolioNCC">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fas fa-plus fa-3x"></i>
@@ -85,11 +86,11 @@
                 </a>
                 <div class="portfolio-caption">
                     <h4>National Cipher Challenge 2018</h4>
-                    <p class="text-muted">Came joint 8th in the nation</p>
+                    <p class="text-muted">Made Python scripts to decrypt ciphers. Came joint 8th in the nation</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioVEX">
+                <a class="portfolio-link" data-toggle="modal" data-target="#portfolioVEX">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fas fa-plus fa-3x"></i>
@@ -99,11 +100,11 @@
                 </a>
                 <div class="portfolio-caption">
                     <h4>VEX Robotics Competition</h4>
-                    <p class="text-muted"></p>
+                    <p class="text-muted">Founded and led a team to design and build a robot for the competition</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioDrone">
+                <a class="portfolio-link" data-toggle="modal" data-target="#portfolioDrone">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fas fa-plus fa-3x"></i>
@@ -112,12 +113,12 @@
                     <img class="img-fluid" src="img/drone/drone.jpg" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Drone</h4>
-                    <p class="text-muted">Came joint 8th in the nation</p>
+                    <h4>3D printed drone with self-made flight software</h4>
+                    <p class="text-muted">C (Arduino)  Python (Raspberry Pi)</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioRC">
+                <a class="portfolio-link" data-toggle="modal" data-target="#portfolioRC">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fas fa-plus fa-3x"></i>
@@ -127,7 +128,7 @@
                 </a>
                 <div class="portfolio-caption">
                     <h4>Remote Controlled Model Aeroplane</h4>
-                    <p class="text-muted">Came joint 8th in the nation</p>
+                    <p class="text-muted">Built model airplanes from foam boards and flown them</p>
                 </div>
             </div>
         </div>
@@ -162,7 +163,372 @@
         </div>
     </footer>
 
+    <div class="portfolio-modal modal fade" id="portfolioAndroidApp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog portfolio-modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h2 class="modal-title">Android Application</h2>
+                                <h6 class="modal-subtitle">Java, Android Studio, HTTP/HTTPS</h6>
+                                <p class="item-intro text-muted">
+                                    Developed Android application which automates online purchase. Sold more than 500
+                                    copies on Google Play Store.
+                                </p>
+                                <p class="momdal-sourcecode">Source Code
+                                    <a href="https://github.com/zoutei/copbot_android">
+                                        <i class="fab fa-github social-button-icon-modal"></i>
+                                    </a>
+                                </p>
+                                <div class="youtube-frame">
+                                    <iframe class="youtube-video" src="https://www.youtube.com/embed/CGDKncDYMSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div id="carouselAndroidAppIndicators" class="carousel slide motal-imgs" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselAndroidAppIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselAndroidAppIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselAndroidAppIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="img/copbot_android/copbot_android_main.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/copbot_android/copbot_android_product.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/copbot_android/copbot_android_profile.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselAndroidAppIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon android-img-control" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselAndroidAppIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon android-img-control" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="button-close-div">
+                                    <button class="btn btn-outline-secondary button-close" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="portfolio-modal modal fade" id="portfolioServer" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog portfolio-modal-dialog">
+            <div class="modal-content portfolio-modal-dialog">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h2 class="modal_title">Back-End Web Server</h2>
+                                <h6 class="modal-subtitle">Python(Django), SQLite, Heroku, PayPal API, Email</h6>
+                                <p class="item-intro text-muted">
+                                    Developed web application in Python using Django Web frame work. The application manages user accounts and licenses including sign up, sign in, confirming email address, sending mass emails and purchasing licenses using PayPal API.
+                                </p>
+                                <p class="momdal-sourcecode">Source Code
+                                    <a href="https://www.github.com/zoutei/copbot_server">
+                                        <i class="fab fa-github social-button-icon-modal"></i>
+                                    </a>
+                                </p>
+                                <div id="carouselWebIndicators" class="carousel slide motal-imgs" data-ride="carousel">
+                                    <ol class="carousel-indicators carousel-indicators-black">
+                                        <li data-target="#carouselWebIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselWebIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselWebIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselWebIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselWebIndicators" data-slide-to="4"></li>
+                                        <li data-target="#carouselWebIndicators" data-slide-to="5"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="img/supbot_server/server_home.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/supbot_server/signup.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/supbot_server/confirm_email.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/supbot_server/signin.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/supbot_server/subscribe.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/supbot_server/subscription_done.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselWebIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon android-img-control" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselWebIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon android-img-control" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="button-close-div">
+                                    <button class="btn btn-outline-secondary button-close" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioNCC" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog portfolio-modal-dialog">
+            <div class="modal-content portfolio-modal-dialog">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h2 class="modal_title">National Cipher Challenge 2018</h2>
+                                <h6 class="modal-subtitle">Python scripts (Matplotlib, NumPy)</h6>
+                                <p class="item-intro text-muted">
+                                    Wrote Python scripts to analyse visually and decipher encrypted messages(
+                                i.e. Substitution, Transposition, Vigenere, 2x2 Hill, Playfair, Beaufort cipher, etc.) Came 8th overall in the nation.
+                                </p>
+                                <p class="momdal-sourcecode">Source Code
+                                    <a href="https://github.com/zoutei/NCC_2018_public">
+                                        <i class="fab fa-github social-button-icon-modal"></i>
+                                    </a>
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="img/ncc/ncc.jpg" alt="">
+                                <div class="button-close-div">
+                                    <button class="btn btn-outline-secondary button-close" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioVEX" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog portfolio-modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h2 class="modal-title">VEX Robotics Competition</h2>
+                                <h6 class="modal-subtitle">3D CAD(Solidworks) and Printing, Mechanical design, C (Software for semi-automation), Problem-solving, Leadership, Teamwork</h6>
+                                <p class="item-intro text-muted">
+                                    Founded and led a team to design and build a robot to do tasks for a competition. Designed in 3D CAD(Solidworks) first to simulate the mechanism and wrote semi-automation software in C with sensors to reduce human error and increase efficiency.
+                                </p>
+                                <div id="carouselVEXIndicators" class="carousel slide motal-imgs" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselVEXIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselVEXIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselVEXIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselVEXIndicators" data-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="img/vex/IMG_0174.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/vex/IMG_0171.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/vex/IMG_0170.jpg" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/vex/IMG_0175.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselVEXIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon android-img-control" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselVEXIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon android-img-control" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="button-close-div">
+                                    <button class="btn btn-outline-secondary button-close" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioDrone" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog portfolio-modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h2 class="modal-title">3D printed drone with self-made flight software</h2>
+                                <h6 class="modal-subtitle">C (Arduino), Python, Javascript(Websocket, Chart.js) (Raspberry Pi)</h6>
+                                <p class="item-intro text-muted">
+                                    Designed the body in 3D CAD(Solidworks) and 3D printed it. Developed the flight control software on Arduino with PID control feedback loop for stablisation. Raspberry Pi was used for communication with the ground computer using Websocket and Javascript to show live data on a browser and live camera feed though long range Wi-Fi.
+                                </p>
+                                <p class="momdal-sourcecode">Source Code &nbsp&nbsp&nbsp&nbsp&nbsp Arduino
+                                    <a href="https://github.com/zoutei/ArduinoDrone">
+                                        <i class="fab fa-github social-button-icon-modal"></i>
+                                    </a>
+                                    Raspberry Pi
+                                    <a href="https://github.com/zoutei/RasPiDrone">
+                                        <i class="fab fa-github social-button-icon-modal"></i>
+                                    </a>
+                                </p>
+                                <div id="carouselDroneIndicators" class="carousel slide motal-imgs" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselDroneIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselDroneIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselDroneIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselDroneIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselDroneIndicators" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="img/drone/IMG_0176.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/drone/IMG_0177.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/drone/IMG_0178.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/drone/IMG_0179.jpg" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/drone/IMG_0180.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselDroneIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselDroneIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="button-close-div">
+                                    <button class="btn btn-outline-secondary button-close" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioRC" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog portfolio-modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h2 class="modal-title">Remote Controlled Model Aeroplane and Glider</h2>
+                                <h6 class="modal-subtitle"></h6>
+                                <p class="item-intro text-muted">
+                                    Built model airplanes from foam boards and flown them
+                                </p>
+                                <div id="carouselRCIndicators" class="carousel slide motal-imgs" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselRCIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselRCIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselRCIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="img/planes/DSC_1802.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/planes/DSC_1801.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/planes/DSC_1804.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselRCIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselRCIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="button-close-div">
+                                    <button class="btn btn-outline-secondary button-close" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
